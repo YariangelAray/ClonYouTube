@@ -1,33 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
   <title>Clon YouTube</title>
 </head>
-<body class="content">
+<body>
 
   <!-- ENCABEZADO -->
   <header class="header">
-    <div class="header__icono-logo">
+    
+    <!-- LOGO -->
+    <div class="logo-contenedor">
+
+      <a href="" class="iconos"><i class="ri-menu-line"></i></a>
+
+      <div class="logo">
+        <div class="logo-img">
+          <img src="img/logo.png" alt="logo">          
+        </div>
+        <h1>CYouTube</h1>
+      </div>
 
     </div>
 
-    <div class="header__busqueda">
-      <div class="busqueda__barra">
-        <input type="text" placeholder="Buscar" class="busqueda__ingresar">
-        <a href="" class="iconos busqueda__buscar"><i class='bx bx-search'></i></a>
+    <!-- BARRA DE BUSQUEDA -->
+
+    <div class="search-container">
+
+      <form action="">
+        <input type="text" placeholder="Buscar">
+        <button><i class="ri-search-line"></i></button>
+      </form>
+      <button class="iconos"><i class="ri-mic-line"></i></button>
+    </div>
+
+    <!-- PERFIL -->
+    <div class="profile-container">
+      <a href="" class="iconos"><i class="ri-video-add-line"></i></a>
+      <a href="" class="iconos"><i class="ri-notification-2-line"></i></a>
+      <div class="perfil-img">
+        <img src="img/Gatitos.jpg" alt="perfil">
       </div>
     </div>
 
-    <div class="header__iconos-perfil">
-  <!-- SIDE BAR -->
-    </div>
   </header>
+
+  <!-- SIDE BAR -->
   <aside class="sidebar"></aside>
-  <main class="main"></main>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="content  "></main>
   
 </body>
 </html>
