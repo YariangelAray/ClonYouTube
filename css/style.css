@@ -55,6 +55,15 @@ hr{
   border: 0.5px solid var(--bordes-color);
   border-radius: 12px;
 }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width:4px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+}
+
 .header{
   grid-area: header;
   position: fixed;  
@@ -179,17 +188,9 @@ hr{
   overflow-y:scroll;
 }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-}
-
-::-webkit-scrollbar:vertical {
-  width:4px;
-}
-
 .sidebar:hover::-webkit-scrollbar-thumb{
   background-color: var(--bordes-color);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 
