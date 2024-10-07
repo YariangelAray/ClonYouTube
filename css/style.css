@@ -242,7 +242,6 @@ hr+h4{
   border-top: var(--borde-ligero);
   border-bottom: var(--borde-ligero);
   flex-wrap: nowrap;
-  justify-content: center;
 }
 
 .chips-wrapper:hover::-webkit-scrollbar-thumb{
