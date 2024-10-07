@@ -8,42 +8,44 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Clon YouTube</title>
 </head>
-<body>
+
+<body class="body">
 
   <!-- ENCABEZADO -->
   <header class="header">
     
     <!-- LOGO -->
-    <div class="logo-contenedor">
+    <div class="header__logo-contenedor">
 
-      <a href="" class="iconos"><i class="ri-menu-line"></i></a>
+      <a href="" class="icono"><i class="ri-menu-line"></i></a>
 
       <div class="logo">
-        <div class="logo-img">
-          <img src="img/Youtube_logo.png" alt="logo">
+        <div class="logo__image">
+          <img class="image" src="img/Youtube_logo.png" alt="logo">
         </div>
-        <h1>CYouTube</h1>
+        <h1 class="logo__titulo">CYouTube</h1>
       </div>
 
     </div>
 
-    <!-- BARRA DE BUSQUEDA -->
+    <!-- BUSQUEDA -->
 
-    <div class="search-container">
+    <div class="header__busqueda-contenedor">
 
-      <form action="">
-        <input type="text" placeholder="Buscar">
-        <button><i class="ri-search-line"></i></button>
+      <form class="barra-busqueda" action="">
+        <input class="barra-busqueda__ingresar" type="text" placeholder="Buscar">
+        <button class="barra-busqueda__boton"><i class="ri-search-line"></i></button>
       </form>
-      <button class="iconos"><i class="ri-mic-line"></i></button>
+      <a href="" class="icono icono--fondo"><i class="ri-mic-line"></i></a>
     </div>
 
     <!-- PERFIL -->
-    <div class="profile-container">
-      <a href="" class="iconos"><i class="ri-video-add-line"></i></a>
-      <a href="" class="iconos"><i class="ri-notification-2-line"></i></a>
-      <div class="perfil-img">
-        <img src="img/Gatitos.jpg" alt="perfil">
+    <div class="header__perfil-contenedor">
+      <a href="" class="icono"><i class="ri-video-add-line"></i></a>
+      <a href="" class="icono"><i class="ri-notification-2-line"></i></a>
+      
+      <div class="perfil-image">
+        <img class="image" src="img/Gatitos.jpg" alt="perfil">
       </div>
     </div>
 
@@ -51,66 +53,68 @@
 
   <!-- SIDE BAR -->
   <aside class="sidebar">
-    <div class="sidebar-items">
-      <a href="" class="sidebar-item">
-        <i class="ri-home-5-line"></i><span>Home</span>
+    <div class="sidebar__items">
+
+      <a href="" class="sidebar__item">
+        <i class="ri-home-5-line sidebar__item-icono"></i><span class="sidebar__item-texto">Home</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-compass-3-line"></i><span>Explore</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-compass-3-line sidebar__item-icono"></i><span class="sidebar__item-texto">Explore</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-wireless-charging-line"></i><span>Shorts</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-wireless-charging-line sidebar__item-icono"></i><span class="sidebar__item-texto">Shorts</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-rss-line"></i><span>Subscription</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-rss-line sidebar__item-icono"></i><span class="sidebar__item-texto">Subscription</span>
       </a>
 
-      <hr>
+      <hr class="sidebar__separador">
 
-      <a href="" class="sidebar-item">
-        <i class="ri-links-line"></i><span>Library</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-links-line sidebar__item-icono"></i><span class="sidebar__item-texto">Library</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-history-line"></i><span>History</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-history-line sidebar__item-icono"></i><span class="sidebar__item-texto">History</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-video-line"></i></i><span>Your videos</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-video-line sidebar__item-icono"></i><span class="sidebar__item-texto">Your videos</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-time-line"></i><span>Watch videos</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-time-line sidebar__item-icono"></i><span class="sidebar__item-texto">Watch videos</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-play-list-2-fill"></i></i><span>All videos</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-play-list-2-fill sidebar__item-icono"></i><span class="sidebar__item-texto">All videos</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-arrow-down-line"></i><span>Show more</span>
-      </a>
-      <hr>
-      <h4>MORE FROM YOUTUBE</h4>
-
-      <a href="" class="sidebar-item">
-        <i class="ri-keyboard-box-line"></i><span>Gaming</span>
-      </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-live-line"></i><span>Live</span>
-      </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-award-line"></i><span>Sports</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-arrow-down-line sidebar__item-icono"></i><span class="sidebar__item-texto">Show more</span>
       </a>
 
-      <hr>
+      <hr class="sidebar__separador">
+      <h4 class="sidebar__texto">MORE FROM YOUTUBE</h4>
 
-      <a href="" class="sidebar-item">
-        <i class="ri-settings-5-line"></i><span>Setting</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-keyboard-box-line sidebar__item-icono"></i><span class="sidebar__item-texto">Gaming</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-flag-line"></i><span>Report history</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-live-line sidebar__item-icono"></i><span class="sidebar__item-texto">Live</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-question-line"></i><span>Help</span>
+      <a href="" class="sidebar__item">
+        <i class="ri-award-line sidebar__item-icono"></i><span class="sidebar__item-texto">Sports</span>
       </a>
-      <a href="" class="sidebar-item">
-        <i class="ri-feedback-line"></i><span>Send feedback</span>
+
+      <hr class="sidebar__separador">
+
+      <a href="" class="sidebar__item">
+        <i class="ri-settings-5-line sidebar__item-icono"></i><span class="sidebar__item-texto">Setting</span>
+      </a>
+      <a href="" class="sidebar__item">
+        <i class="ri-flag-line sidebar__item-icono"></i><span class="sidebar__item-texto">Report history</span>
+      </a>
+      <a href="" class="sidebar__item">
+        <i class="ri-question-line sidebar__item-icono"></i><span class="sidebar__item-texto">Help</span>
+      </a>
+      <a href="" class="sidebar__item">
+        <i class="ri-feedback-line sidebar__item-icono"></i><span class="sidebar__item-texto">Send feedback</span>
       </a>
     </div>
 
@@ -120,561 +124,607 @@
   <main class="content">
 
     <!-- CHIPS -->
-    <div class="chips-wrapper">
+    <div class="content__chips">
       <div class="chips">
-        <p>All</p>
+        <p class="chips__text">All</p>
       </div>
       <div class="chips">
-        <p>HTML</p>
+        <p class="chips__text">HTML</p>
       </div>
       <div class="chips">
-        <p>CSS</p>
+        <p class="chips__text">CSS</p>
       </div>
       <div class="chips">
-        <p>Responsive desing</p>
+        <p class="chips__text">Responsive desing</p>
       </div>
       <div class="chips">
-        <p>UI desing</p>
+        <p class="chips__text">UI desing</p>
       </div>
       <div class="chips">
-        <p>JavaScript</p>
+        <p class="chips__text">JavaScript</p>
       </div>
       <div class="chips">
-        <p>Musica</p>
+        <p class="chips__text">Musica</p>
       </div>
       <div class="chips">
-        <p>React</p>
+        <p class="chips__text">React</p>
       </div>
       <div class="chips">
-        <p>UI/UX</p>
+        <p class="chips__text">UI/UX</p>
       </div>
       <div class="chips">
-        <p>Java</p>
+        <p class="chips__text">Java</p>
       </div>
       <div class="chips">
-        <p>PHP</p>
+        <p class="chips__text">PHP</p>
       </div>
       <div class="chips">
-        <p>Node js</p>
+        <p class="chips__text">Node js</p>
       </div>
       <div class="chips">
-        <p>MySQL</p>
+        <p class="chips__text">MySQL</p>
       </div>
       <div class="chips">
-        <p>Oracle</p>
+        <p class="chips__text">Oracle</p>
       </div>
       <div class="chips">
-        <p>UML</p>
+        <p class="chips__text">UML</p>
       </div>
     </div>
 
-    <!-- CONTAINER -->
-    <div class="video-container">
+    <!-- CONTENEDOR -->
+    <div class="content__videos">
       
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-1.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-1.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-2.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-2.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-3.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-3.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-4.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-4.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-5.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-5.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-6.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-6.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-7.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-7.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-8.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-8.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-9.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-9.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-10.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-10.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-11.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-11.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-12.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-12.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-13.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-13.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-14.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-14.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-15.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-15.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-16.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-16.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-17.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-17.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-18.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-18.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-19.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-19.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-20.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-20.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-21.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-21.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
         </div>
       </div>
       <!-- VIDEO -->
-      <div class="video-container-cover">
-        <div class="video-content">
-          <a href="#" class="video-box">
-            <img src="img/img-22.jpg" alt="video">
-          </a>
-          <!-- DETALLES -->
-          <div class="video-detail">
-            <div class="chanel-logo">
-              <img src="img/Gatitos.jpg" alt="logo">
-            </div>
-             
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Yariangel Aray</div>
-              <div class="views-upload">
-                <div class="views">28k Views</div>
-                <div class="upload">1 Year Ago</div>
-              </div>
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-22.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
             </div>
           </div>
+
+        </div>
+      </div>
+      <!-- VIDEO -->
+      <div class="video">
+
+        <a href="#" class="video__image">
+          <img class="image" src="img/img-1.jpg" alt="video">
+        </a>
+        <!-- DETALLES -->
+        <div class="video__info">
+
+          <div class="perfil-image">
+            <img class="image" src="img/Gatitos.jpg" alt="logo">
+          </div>
+            
+          <div class="video__detalles">
+            <h3 class="video__titulo">Clon Youtube Flexbox and Grid CSS</h3>
+            <p class="video__canal-name">Yariangel Aray</p>
+            <div class="video__vistas-subido">
+              <p class="video__vistas">28k Views</p>
+              <p class="video__subido">1 Year Ago</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
