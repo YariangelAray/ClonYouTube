@@ -1,0 +1,16 @@
+:root{
+    --fondo: #212121;
+    --fondo2: #181818;
+    --letras-color: #cfcfcf;
+    --bordes-color: rgba(255,255,255,0.15);
+    --borde-ligero: 1px solid var(--bordes-color);
+    --azul: #1c62b9;
+    --tamaño-iconos: 1.2rem;
+    --transparencia: #555555b0;
+    --tamaño-titulo-logo: 1.5rem;
+    --tamaño-parrafos:1rem;
+    --separacion:8px;
+    --tiempo-transicion: 0.4s;
+    --letras-color-gris:#aaa;
+    --borde-redondeado:15px;
+  }
